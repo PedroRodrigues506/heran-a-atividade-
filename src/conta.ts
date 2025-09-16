@@ -30,7 +30,7 @@ class Conta {
     }
 
     public depositar(valor: number): void {
-        console.log(`O ${this.titular} depositou ${valor} no banco`);
+        console.log(`O ${this.titular} deposito ${valor} no banco`);
         this.saldo += valor
     }
 
@@ -40,9 +40,9 @@ class Conta {
             console.log(`O ${this.titular} sacou ${valor} do banco`);
             this.saldo -= valor;
         } else {
-            console.log(`Você não tem saldo suficiente`);
+            console.log(`Saldo insuficiente`);
         }
-        console.log(`O saldo do cliente ${this.titular} é de R$${this.saldo}.`);
+        console.log(`O saldo  ${this.titular} é de R$${this.saldo}.`);
     }
 
     public recuperarSaldo(): number {
